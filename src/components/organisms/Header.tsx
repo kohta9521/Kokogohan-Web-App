@@ -17,15 +17,15 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 
 const products = [
-    { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-    { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-    { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-    { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+    { name: 'おすすめ', description: '一押しのお店をピックアップ！まとめてご覧いただけます。', href: '#', icon: ChartPieIcon },
+    { name: 'ランキング', description: 'あなたのグループでのランキングをご覧いただけます。', href: '#', icon: CursorArrowRaysIcon },
+    { name: 'ジャンル', description: 'ジャンルごとのお店をご覧いただけます。', href: '#', icon: FingerPrintIcon },
+    { name: '条件検索', description: '出前可能なのか？ランチ営業はしているのか？細かな条件検索が可能です。', href: '#', icon: SquaresPlusIcon },
+    { name: '近場で検索', description: 'パパッと近場ですましたい！そんな時に便利です。', href: '#', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-{ name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-{ name: 'Contact sales', href: '#', icon: PhoneIcon },
+{ name: 'サービスサイト', href: '#', icon: PlayCircleIcon },
+{ name: 'お問い合わせ', href: '#', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -37,7 +37,7 @@ const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     return (
-        <div className="bg-white">
+        <header className="bg-gray">
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 {/* logo area */}
                 <div className="flex lg:flex-1">
@@ -59,7 +59,7 @@ const Header = () => {
                 <Popover.Group className="hidden lg:flex lg:gap-x-12">
                     <Popover className="relative">
                         <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 transition duration-300 hover:text-[color:var(--main-red-color)]">
-                            Product
+                            探す
                             <ChevronDownIcon className="h-5 w-5 flex-none" aria-hidden="true" />
                         </Popover.Button>
 
@@ -109,18 +109,18 @@ const Header = () => {
                     </Popover>
 
                     <a href="#" className="text-sm font-semibold leading-6 ttransition duration-300 hover:text-[color:var(--main-red-color)]">
-                        Features
+                        投稿する
                     </a>
                     <a href="#" className="text-sm font-semibold leading-6 transition duration-300 hover:text-[color:var(--main-red-color)]">
-                        Marketplace
+                        タイムライン
                     </a>
                     <a href="#" className="text-sm font-semibold leading-6 transition duration-300 hover:text-[color:var(--main-red-color)]">
-                        Company
+                        ランキング
                     </a>
                 </Popover.Group>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                     <a href="#" className="text-sm font-semibold leading-6 text-[color:var(--main-red-color)] hover:text-[color:var(--hover-red-color)] hover:transition-all">
-                        Log in <span aria-hidden="true">&rarr;</span>
+                        ログイン <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
             </nav>
@@ -154,7 +154,7 @@ const Header = () => {
                         {({ open }) => (
                             <>
                             <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                                Product
+                                探す
                                 <ChevronDownIcon
                                 className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                                 aria-hidden="true"
@@ -179,19 +179,19 @@ const Header = () => {
                         href="#"
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
-                        Features
+                        投稿する
                         </a>
                         <a
                         href="#"
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
-                        Marketplace
+                        タイムライン
                         </a>
                         <a
                         href="#"
                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
-                        Company
+                        ランキング
                         </a>
                     </div>
                     <div className="py-6">
@@ -199,14 +199,14 @@ const Header = () => {
                         href="#"
                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
-                        Log in
+                        ログイン
                         </a>
                     </div>
                     </div>
                 </div>
                 </Dialog.Panel>
             </Dialog>
-        </div>
+        </header>
     )
 }
 
