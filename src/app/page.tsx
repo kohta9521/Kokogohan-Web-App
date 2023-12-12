@@ -1,9 +1,14 @@
-import React from 'react';
+'use client';
+import Header from "@/components/organisms/Header";
+import React from "react";
+
+
+// components import
 
 export default function Home() {
   return (
-    <main className="">
-      <p className="px-4 text-xl text-amber-400">sample</p>
-    </main>
+    <div id="app" >
+      <Header />
+    </div>
   );
 }
