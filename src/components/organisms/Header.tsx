@@ -17,15 +17,15 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 
 
 const products = [
-    { name: 'おすすめ', description: '一押しのお店をピックアップ！まとめてご覧いただけます。', href: '#', icon: ChartPieIcon },
-    { name: 'ランキング', description: 'あなたのグループでのランキングをご覧いただけます。', href: '#', icon: CursorArrowRaysIcon },
-    { name: 'ジャンル', description: 'ジャンルごとのお店をご覧いただけます。', href: '#', icon: FingerPrintIcon },
-    { name: '条件検索', description: '出前可能なのか？ランチ営業はしているのか？細かな条件検索が可能です。', href: '#', icon: SquaresPlusIcon },
-    { name: '近場で検索', description: 'パパッと近場ですましたい！そんな時に便利です。', href: '#', icon: ArrowPathIcon },
+    { name: 'おすすめ', description: '一押しのお店をピックアップ！まとめてご覧いただけます。', href: '/search/recommend', icon: ChartPieIcon },
+    { name: 'ランキング', description: 'あなたのグループでのランキングをご覧いただけます。', href: '/search/ranking', icon: CursorArrowRaysIcon },
+    { name: 'ジャンル', description: 'ジャンルごとのお店をご覧いただけます。', href: '/search/genre', icon: FingerPrintIcon },
+    { name: '条件検索', description: '出前可能なのか？ランチ営業はしているのか？細かな条件検索が可能です。', href: '/search/conditinalsearch', icon: SquaresPlusIcon },
+    { name: '近場で検索', description: 'パパッと近場ですましたい！そんな時に便利です。', href: '/search/nearbysearch', icon: ArrowPathIcon },
 ]
 const callsToAction = [
-{ name: 'サービスサイト', href: '#', icon: PlayCircleIcon },
-{ name: 'お問い合わせ', href: '#', icon: PhoneIcon },
+{ name: 'サービスサイト', href: 'https://kokogohan-kohta9521s-projects.vercel.app/', icon: PlayCircleIcon },
+{ name: 'お問い合わせ', href: 'https://kokogohan-kohta9521s-projects.vercel.app/contact', icon: PhoneIcon },
 ]
 
 function classNames(...classes) {
@@ -41,7 +41,7 @@ const Header = () => {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
                 {/* logo area */}
                 <div className="flex lg:flex-1">
-                    <a href="#" className="flex lg:flex-1">
+                    <a href="/" className="flex lg:flex-1">
                         <img className="h-8 w-auto" src="/images/logo.png" alt="" />
                     </a>
                 </div>
@@ -119,7 +119,7 @@ const Header = () => {
                     </a>
                 </Popover.Group>
                 <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                    <a href="#" className="text-sm font-semibold leading-6 text-[color:var(--main-red-color)] hover:text-[color:var(--hover-red-color)] hover:transition-all">
+                    <a href="/login" className="text-sm font-semibold leading-6 text-[color:var(--main-red-color)] hover:text-[color:var(--hover-red-color)] hover:transition-all">
                         ログイン <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
