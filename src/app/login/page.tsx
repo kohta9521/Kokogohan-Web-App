@@ -1,4 +1,3 @@
-import BasicLayout from '@/components/templates/BasicLayout'
 import React from 'react'
 
 // components import
