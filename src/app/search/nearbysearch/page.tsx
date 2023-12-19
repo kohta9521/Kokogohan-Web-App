@@ -1,15 +1,16 @@
 import React from 'react'
 
+
 // components import
 import BasicLayout from '@/components/templates/BasicLayout'
 
 
-const Ranking = () => {
+const Nearbysearch = () => {
     return (
         <BasicLayout>
-            <h1>ranking page</h1>
+            <h1>nearbysearch page</h1>
         </BasicLayout>
     )
 }
 
-export default Ranking
+export default Nearbysearch

@@ -1,10 +1,14 @@
 import React from 'react'
 
+// components import
+import BasicLayout from '@/components/templates/BasicLayout'
+
+
 const Recommend = () => {
     return (
-        <div>
-            <h1>Recommend Page</h1>
-        </div>
+        <BasicLayout>
+            <h1>Recommend page</h1>
+        </BasicLayout>
     )
 }
 

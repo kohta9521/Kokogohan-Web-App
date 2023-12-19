@@ -108,13 +108,13 @@ const Header = () => {
                             </Transition>
                     </Popover>
 
-                    <a href="#" className="text-sm font-semibold leading-6 ttransition duration-300 hover:text-[color:var(--main-red-color)]">
+                    <a href="/post" className="text-sm font-semibold leading-6 ttransition duration-300 hover:text-[color:var(--main-red-color)]">
                         投稿する
                     </a>
-                    <a href="#" className="text-sm font-semibold leading-6 transition duration-300 hover:text-[color:var(--main-red-color)]">
+                    <a href="/timeline" className="text-sm font-semibold leading-6 transition duration-300 hover:text-[color:var(--main-red-color)]">
                         タイムライン
                     </a>
-                    <a href="#" className="text-sm font-semibold leading-6 transition duration-300 hover:text-[color:var(--main-red-color)]">
+                    <a href="/ranking" className="text-sm font-semibold leading-6 transition duration-300 hover:text-[color:var(--main-red-color)]">
                         ランキング
                     </a>
                 </Popover.Group>
