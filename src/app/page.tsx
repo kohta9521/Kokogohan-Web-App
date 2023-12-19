@@ -4,6 +4,7 @@ import React from "react";
 // components import
 import BasicLayout from "@/components/templates/BasicLayout";
 import GenreBox from "@/components/organisms/GenreBox";
+import MapBox from "@/components/molecules/MapBox";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
     <div id="app">
       <BasicLayout>
         <GenreBox />
+        <MapBox />
       </BasicLayout>
     </div>
   );
