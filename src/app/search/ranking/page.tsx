@@ -1,10 +1,14 @@
 import React from 'react'
 
+// components import
+import BasicLayout from '@/components/templates/BasicLayout'
+
+
 const Ranking = () => {
     return (
-        <div>
+        <BasicLayout>
             <h1>ranking page</h1>
-        </div>
+        </BasicLayout>
     )
 }
 
