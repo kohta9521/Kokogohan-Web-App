@@ -28,10 +28,9 @@ const callsToAction = [
 { name: 'お問い合わせ', href: 'https://kokogohan-kohta9521s-projects.vercel.app/contact', icon: PhoneIcon },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
 return classes.filter(Boolean).join(' ')
 }
-
 
 const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
